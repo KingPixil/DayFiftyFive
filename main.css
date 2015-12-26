@@ -78,7 +78,7 @@ input:focus::-webkit-input-placeholder {
 
 h1 {
   font-family: "Lemon", normal;
-  font-size: 80px;
+  font-size: 15vh;
   color: hsla(0, 2%, 95%, 1);
   margin: -50px auto 50px auto;
   text-align: center;
