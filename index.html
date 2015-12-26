@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf8" />
+		<title>Christmas Greeting</title>
+		<link rel="stylesheet" type="text/css" href="main.css" />
+		<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+		<link rel="shortcut icon" type="image/png" href="http://kingpixil.github.io/DayFiftyFive/favicon.png"/>
+	</head>
+<body ng-app="">
+  <div class="search">
+    <label id="label-text">Name</label>
+    <input type="text" class="search-input" id="name" placeholder="What is your name?" ng-model="name">
+    <button id="submit" style=" display:none;" >Submit</button>
+  </div>
+	<!--Modal Window-->
+<div class="modal" data-toggle="true" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
+  <div class="modal__window">
+    <button class="modal__close" data-toggle="true">Close</button>
+    <h2 class="modal__title" id="modalTitle">Instructions</h2>
+    <p id="modalDescription">
+		<ul>
+			<li>Enter Your Name</li>
+			<li>Click Enter</li>
+		</ul>
+		</p>
+    <button class="btnn btn--modal" type="button" data-toggle="true">Let's Go!</button>
+  </div>
+</div>
+  <div id="tree">
+    <div id="triangle1"></div>
+    <div id="triangle2"></div>
+    <div id="triangle3"></div>
+    <div id="trunk"></div>
+    <div id="base"></div>
+
+    <div class="lights">
+      <div class="light one red"></div>
+      <div class="light two orange"></div>
+      <div class="light three orange"></div>
+      <div class="light four purple"></div>
+      <div class="light five yellow"></div>
+      <div class="light six white"></div>
+      <div class="light seven red"></div>
+      <div class="light eight orange"></div>
+      <div class="light nine orange"></div>
+      <div class="light ten purple"></div>
+      <div class="light eleven yellow"></div>
+      <div class="light twelve white"></div>
+      <div class="light thirteen red"></div>
+      <div class="light fourteen orange"></div>
+      <div class="light fifteen orange"></div>
+      <div class="light sixteen purple"></div>
+      <div class="light seventeen yellow"></div>
+      <div class="light eighteen white"></div>
+      <div class="light nineteen red"></div>
+      <div class="light twenty orange"></div>
+      <div class="light twentyone orange"></div>
+      <div class="light twentytwo purple"></div>
+      <div class="light twentythree yellow"></div>
+      <div class="light twentyfour red"></div>
+      <div class="light twentyfive orange"></div>
+      <div class="light twentysix purple"></div>
+
+      <div id="star"></div>
+    </div>
+  </div>
+<div class="md-modal md-effect-12">
+							<div id="snow">
+    <div class="md-content">
+        <div>
+             <h1 id="greeting">Merry Christmas {{name}}</h1>
+            <button class="md-close modalBtn">Close</button>
+        </div>
+    </div>
+	</div>
+</div>
+
+<div class="md-overlay"></div>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
